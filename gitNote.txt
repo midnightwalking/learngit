@@ -3,4 +3,9 @@
 提交：git commit -m <message> 
 查看仓库变动：git status 
 查看文件修改内容：git diff <file> 
-查看文件版本历史：$ git log -- <file>
+查看文件版本历史：git log -- <file>
+查看版本历史记录：git log
+
+在Git中，用HEAD表示当前版本上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。
+把当前版本回退到上一个版本可以使用git reset命令：git reset --hard HEAD^
+Git提供了一个命令用来记录你的每一次命令：git reflog
